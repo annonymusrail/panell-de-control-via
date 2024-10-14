@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Planificació reposició actius de via</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="fgc_negre.png" type="image/png"> <!-- Actualizado a PNG -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <div id="header">
+        <img src="https://raw.githubusercontent.com/cvazquezfgc/planificacio-renovacio-via/main/logo%20blanc.png" alt="FGC Logo">
+        <div id="nav-buttons">
+            <button class="nav-button selected" data-view="espai-temps">ESPAI-TEMPS</button>
+            <button class="nav-button" data-view="taula-inventari">TAULA INVENTARI</button>
+            <button class="nav-button" data-view="necessitats">NECESSITATS D'INVERSIÓ</button>
+        </div>
+        <div id="clear-filters-icon" style="display: none;">
+            <!-- Icono de embudo con cruz (en blanco) -->
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 4h18l-7 8v5l-4 3v-8l-7-8z"></path>
+                <line x1="19" y1="5" x2="5" y2="19"></line>
+            </svg>
+        </div>
+    </div>
+    <div id="content">
+        <div id="main-content">
+            <div id="plot"></div>
+        </div>
+        <div id="table-container" style="display: none;"></div>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
