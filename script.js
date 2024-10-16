@@ -51,7 +51,7 @@ async function showEspaiTempsView() {
 
     // Cargar datos si no se han cargado aún
     if (!resumData) {
-        const resumUrl = 'https://raw.githubusercontent.com/cvazquezfgc/planificacio-renovacio-via/main/resum.json';
+        const resumUrl = 'https://raw.githubusercontent.com/annonymusrailfgc/panell-de-control-via/main/resum.json';
         resumData = await loadData(resumUrl);
         if (!resumData) {
             console.error('No se pudo cargar el resumen de datos.');
@@ -73,7 +73,7 @@ async function showTaulaInventariView() {
 
     // Cargar datos si no se han cargado aún
     if (!resumData) {
-        const resumUrl = 'https://raw.githubusercontent.com/cvazquezfgc/planificacio-renovacio-via/main/resum.json';
+        const resumUrl = 'https://raw.githubusercontent.com/annonymusrailfgc/panell-de-control-via/main/resum.json';
         resumData = await loadData(resumUrl);
         if (!resumData) {
             console.error('No se pudo cargar el resumen de datos.');
@@ -269,7 +269,7 @@ async function drawFullLinePlot(trams, resumData) {
     document.getElementById('plot').innerHTML = '';
 
     if (!estacionsData) {
-        const estacionsUrl = 'https://raw.githubusercontent.com/cvazquezfgc/planificacio-renovacio-via/main/estacions.json';
+        const estacionsUrl = 'https://raw.githubusercontent.com/annonymusrailfgc/panell-de-control-via/main/estacions.json';
         estacionsData = await loadData(estacionsUrl);
         if (!estacionsData) {
             console.error('No se pudo cargar los datos de las estaciones.');
